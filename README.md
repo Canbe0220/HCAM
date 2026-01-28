@@ -1,4 +1,4 @@
-# RLEGA-FJSP
+# HCAM
 
 This repository is the implementation of the paper “HCAM: Hierarchical Coupling Attentive Modulation via Deep Reinforcement Learning for Flexible Job Shop Scheduling”.
 
