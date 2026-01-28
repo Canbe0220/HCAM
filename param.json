@@ -1,0 +1,50 @@
+{
+  "train_paras": {
+    "num_jobs": 10,
+    "num_mas": 5,
+    "save_timestep": 10,
+    "update_timestep": 1,
+    "batch_size": 20,
+    "ope_dim" : 8,
+    "mac_dim" : 4,
+    "pair_dim": 4,
+    "valid_size": 100,
+    "warmup_steps": 100,
+    "total_iterations": 1000,
+    "min_lr": 1e-4,
+    "parallel_iterations": 20,
+    "visdom_name": "training curve"
+  },
+  "model_paras": {
+    "in_ope_dim": 8,
+    "in_mac_dim": 4,
+    "out_ope_dim": 8,
+    "out_mac_dim": 8,
+    "num_heads": 2,
+    "dropout": 0.0,
+    "actor_in_dim": 20,
+    "critic_in_dim": 16,
+    "policy_layer": 3,
+    "policy_hidden_dim": 64,
+    "policy_out_dim": 1
+  },
+  "ppo_paras": {
+    "learning_rate": 0.0003,
+    "discount_factor": 1.0,
+    "K_epoch": 3,
+    "betas": [0.9, 0.999],
+    "clip_ratio": 0.2,
+    "max_grad_norm": 0.5,
+    "policy_coe": 1.0,
+    "value_coe": 0.5,
+    "entropy_coe": 0.01,
+    "minibatch_size": 512
+  },
+  "test_paras": {
+    "num_ins": 148,
+    "sample": false,
+    "num_sample": 100,
+    "num_average": 1,
+    "data_path": "Public"
+  }
+}
